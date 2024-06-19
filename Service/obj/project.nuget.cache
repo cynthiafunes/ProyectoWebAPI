@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WF2lO0rwK+c=",
+  "dgSpecHash": "suLGIwOv8Fk=",
   "success": true,
   "projectFilePath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cynpc\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\cynpc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\cynpc\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\cynpc\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.27\\microsoft.entityframeworkcore.3.1.27.nupkg.sha512",

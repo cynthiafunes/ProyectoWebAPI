@@ -1,20 +1,39 @@
-using Repository; // Agregar esta línea para importar el espacio de nombres donde está definido Cliente
+using Repository;
+using FluentValidation;
 
 namespace Service
 {
+    public class ClienteValidator : AbstractValidator<Cliente>
+    {
+        public ClienteValidator()
+        {
+            RuleFor(cliente => cliente.Nombre).NotEmpty().MinimumLength(3);
+            RuleFor(cliente => cliente.Apellido).NotEmpty().MinimumLength(3);
+            RuleFor(cliente => cliente.Documento).NotEmpty().MinimumLength(7).Must(DocumentoRepetido).WithMessage("El documento ya existe.");
+            RuleFor(cliente => cliente.Celular).NotEmpty().Length(10).Must(cel => int.TryParse(cel, out _)).WithMessage("El celular debe contener solo números.");
+            RuleFor(cliente => cliente.Mail).NotEmpty().EmailAddress();
+        }
+
+        private bool DocumentoRepetido(string documento)
+        {
+            // Lógica para comprobar si el documento está repetido
+            return false;
+        }
+    }
+
     public class ClienteService
     {
+        private readonly ClienteValidator _validator;
+
+        public ClienteService()
+        {
+            _validator = new ClienteValidator();
+        }
+
         public bool ValidateCliente(Cliente cliente)
         {
-            // Implementa las validaciones requeridas para Cliente según FluentValidation
-            // Ejemplo básico:
-            if (string.IsNullOrEmpty(cliente.Nombre) || string.IsNullOrEmpty(cliente.Apellido) || string.IsNullOrEmpty(cliente.Documento))
-                return false;
-            if (cliente.Nombre.Length < 3 || cliente.Apellido.Length < 3 || cliente.Documento.Length < 7)
-                return false;
-            if (!int.TryParse(cliente.Celular, out _) || cliente.Celular.Length != 10)
-                return false;
-            return true;
+            var result = _validator.Validate(cliente);
+            return result.IsValid;
         }
     }
 }

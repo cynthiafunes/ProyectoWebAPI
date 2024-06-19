@@ -13,5 +13,3 @@ namespace Repository
         public string Estado { get; set; }
     }
 }
-
-

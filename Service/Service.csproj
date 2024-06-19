@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Repository\Repository.csproj" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
   </ItemGroup>
 
 </Project>
