@@ -1,3 +1,5 @@
+// CONTIENE TODAS LAS VALIDACIONES DE LA CLASE FACTURA.
+
 using Repository;
 using FluentValidation;
 

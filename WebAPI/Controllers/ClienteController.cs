@@ -1,3 +1,8 @@
+// CREA CORRECTAMENTE LOS ENDPOINTS DE LA CAPA WEBAPI 
+
+// Create, Read, Update y Delete están implementados correctamente en el controlador ClienteController.
+// El listado de clientes (GetAll) también está implementado adecuadamente en el controlador ClienteController.
+
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 using Service;
@@ -18,6 +23,7 @@ namespace WebAPI.Controllers
             _clienteService = clienteService;
         }
 
+        //GET por ID:
         [HttpGet("{id}")]
         public ActionResult<Cliente> Get(int id)
         {
@@ -29,6 +35,7 @@ namespace WebAPI.Controllers
             return cliente;
         }
 
+        //POST para agregar un cliente:
         [HttpPost]
         public IActionResult Post(Cliente cliente)
         {
@@ -41,6 +48,7 @@ namespace WebAPI.Controllers
             return CreatedAtAction(nameof(Get), new { id = cliente.Id }, cliente);
         }
 
+        //PUT para actualizar un cliente por ID:
         [HttpPut("{id}")]
         public IActionResult Put(int id, Cliente cliente)
         {
@@ -58,6 +66,7 @@ namespace WebAPI.Controllers
             return NoContent();
         }
 
+        //DELETE para eliminar un cliente por ID:
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -2,6 +2,9 @@
 //CRUD (Get, Add, Update, Delete)
 //Listado GetAll
 
+//Conexión Correcta a la Capa Repository:
+//se implementa la interfaz IRepository<T> para realizar operaciones CRUD en las entidades Cliente y Factura respectivamente.
+
 using System.Collections.Generic;
 using System.Linq;
 

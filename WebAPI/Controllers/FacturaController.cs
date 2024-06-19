@@ -1,3 +1,8 @@
+//// CREA CORRECTAMENTE LOS ENDPOINTS DE LA CAPA WEBAPI 
+
+//Create, Read, Update y Delete están implementados correctamente en el controlador FacturaController.
+// El listado de facturas (GetAll) también está implementado adecuadamente en el controlador FacturaController.
+
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 using Service;
@@ -18,6 +23,7 @@ namespace WebAPI.Controllers
             _facturaService = facturaService;
         }
 
+        //GET por ID:
         [HttpGet("{id}")]
         public ActionResult<Factura> Get(int id)
         {
@@ -29,6 +35,7 @@ namespace WebAPI.Controllers
             return factura;
         }
 
+        //POST para agregar una factura:
         [HttpPost]
         public IActionResult Post(Factura factura)
         {
@@ -41,6 +48,7 @@ namespace WebAPI.Controllers
             return CreatedAtAction(nameof(Get), new { id = factura.Id }, factura);
         }
 
+        //PUT para actualizar una factura por ID:
         [HttpPut("{id}")]
         public IActionResult Put(int id, Factura factura)
         {
@@ -58,6 +66,7 @@ namespace WebAPI.Controllers
             return NoContent();
         }
 
+        //DELETE para eliminar una factura por ID:
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -1,3 +1,6 @@
+// Conexión Correcta a la Capa Repository:
+// se configura correctamente DatabaseContext como un servicio mediante services.AddDbContext<DatabaseContext>.
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

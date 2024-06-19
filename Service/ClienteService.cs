@@ -1,3 +1,5 @@
+// CONTIENE TODAS LAS VALIDACIONES DE LA CLASE CLIENTE.
+
 using Repository;
 using FluentValidation;
 
@@ -18,7 +20,7 @@ namespace Service
             RuleFor(cliente => cliente.Documento).NotEmpty().MinimumLength(7).Must(DocumentoRepetido).WithMessage("El documento ya existe.");
             //Celular como dato numérico de longitud 10:
             RuleFor(cliente => cliente.Celular).NotEmpty().Length(10).Must(cel => int.TryParse(cel, out _)).WithMessage("El celular debe contener solo números.");
-            //RuleFor(cliente => cliente.Mail).NotEmpty().EmailAddress();
+            //Mail debe contener un mail con el formato correcto.
             RuleFor(cliente => cliente.Mail).NotEmpty().EmailAddress();
         }
 
