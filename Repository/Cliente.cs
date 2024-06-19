@@ -4,12 +4,12 @@ namespace Repository
     {
         public int Id { get; set; }
         public int Id_banco { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string Documento { get; set; }
-        public string Direccion { get; set; }
-        public string Mail { get; set; }
-        public string Celular { get; set; }
-        public string Estado { get; set; }
+        public required string Nombre { get; set; }
+        public required string Apellido { get; set; } 
+        public required string Documento { get; set; } 
+        public required string Direccion { get; set; } 
+        public required string Mail { get; set; } 
+        public required string Celular { get; set; } 
+        public required string Estado { get; set; } 
     }
 }
