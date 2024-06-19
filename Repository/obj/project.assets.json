@@ -711,11 +711,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+      "projectUniqueName": "c:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+      "projectPath": "c:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\cynpc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\obj\\",
+      "outputPath": "c:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cynpc\\AppData\\Roaming\\NuGet\\NuGet.Config"

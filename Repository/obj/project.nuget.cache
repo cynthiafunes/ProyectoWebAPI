@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GYuzUyoFbhs=",
+  "dgSpecHash": "V6eTpXZjjNQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cynpc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\cynpc\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cynpc\\Desktop\\Proyecto\\Service\\Service.csproj": {}
+    "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj": {
+    "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\cynpc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cynpc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\cynpc\\Desktop\\Proyecto\\Service\\Service.csproj": {
+    "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\cynpc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Service\\obj\\",
+        "outputPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cynpc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj"
+              "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj"
               }
             }
           }

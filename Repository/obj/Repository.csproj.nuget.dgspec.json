@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj": {}
+    "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj": {
+    "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\cynpc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cynpc\\Desktop\\Proyecto\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\cynpc\\Desktop\\ProyectoWebAPI\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cynpc\\AppData\\Roaming\\NuGet\\NuGet.Config"
