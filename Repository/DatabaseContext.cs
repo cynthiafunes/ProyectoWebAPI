@@ -1,3 +1,5 @@
+//CONTIENE UNA CLASE CONEXIÓN
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Repository

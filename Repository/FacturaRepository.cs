@@ -1,3 +1,7 @@
+// CONTIENE LAS CLASES REPOSITORY PARA LOS MÉTODOS CRUD Y LISTADO
+//CRUD (Get, Add, Update, Delete)
+//Listado GetAll
+
 using System.Collections.Generic;
 using System.Linq;
 
