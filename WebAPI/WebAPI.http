@@ -4,3 +4,147 @@ GET {{WebAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+@WebAPI_HostAddress = http://localhost:5174
+
+###
+### Obtener todos los clientes ###
+GET {{WebAPI_HostAddress}}/cliente
+Accept: application/json
+
+###
+### Obtener cliente por ID ###
+GET {{WebAPI_HostAddress}}/cliente/2
+Accept: application/json
+
+###
+### Crear un nuevo cliente ###
+POST {{WebAPI_HostAddress}}/cliente
+Content-Type: application/json
+
+{
+  "IdBanco": 1,
+  "Nombre": "Juan",
+  "Apellido": "Perez",
+  "Documento": "1234567",
+  "Direccion": "Calle 123",
+  "Mail": "juan.perez@example.com",
+  "Celular": "1234567890",
+  "Estado": "activo"
+}
+
+### Crear un segundo cliente ###
+POST {{WebAPI_HostAddress}}/cliente
+Content-Type: application/json
+
+{
+  "IdBanco": 2,
+  "Nombre": "Ana",
+  "Apellido": "Lopez",
+  "Documento": "1239658",
+  "Direccion": "Calle 526",
+  "Mail": "ana.lopez@example.com",
+  "Celular": "1234567898",
+  "Estado": "activo"
+}
+
+### Crear un tercer cliente ###
+POST {{WebAPI_HostAddress}}/cliente
+Content-Type: application/json
+
+{
+  "IdBanco": 3,
+  "Nombre": "Oscar",
+  "Apellido": "Ayala",
+  "Documento": "1237658",
+  "Direccion": "Calle 968",
+  "Mail": "oscar.ayala@example.com",
+  "Celular": "1294567898",
+  "Estado": "activo"
+}
+
+###
+### Actualizar un cliente existente ###
+PUT {{WebAPI_HostAddress}}/cliente/1
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "IdBanco": 1,
+  "Nombre": "Juan 2",
+  "Apellido": "Perez",
+  "Documento": "1234567",
+  "Direccion": "Calle 123",
+  "Mail": "juan.perez@example.com",
+  "Celular": "1234567890",
+  "Estado": "activo"
+}
+
+###
+### Eliminar un cliente por ID ###
+DELETE {{WebAPI_HostAddress}}/cliente/1
+
+###
+### Obtener todas las facturas ###
+GET {{WebAPI_HostAddress}}/factura
+Accept: application/json
+
+###
+### Obtener factura por ID ###
+GET {{WebAPI_HostAddress}}/factura/1
+Accept: application/json
+
+###
+### Crear una nueva factura ###
+POST {{WebAPI_HostAddress}}/factura
+Content-Type: application/json
+
+{
+  "IdCliente": 1,
+  "Nro_factura": "123-456-789012",
+  "FechaHora": "2023-06-19T00:00:00",
+  "Total": 1000.00,
+  "Total_iva5": 50.00,
+  "Total_iva10": 100.00,
+  "Total_iva": 150.00,
+  "Total_letras": "mil pesos",
+  "Sucursal": "Sucursal 1"
+}
+
+### Crear una nueva factura ###
+POST {{WebAPI_HostAddress}}/factura
+Content-Type: application/json
+
+{
+  "IdCliente": 2,
+  "Nro_factura": "321-654-789012",
+  "FechaHora": "2021-06-19T00:00:00",
+  "Total": 1000.00,
+  "Total_iva5": 50.00,
+  "Total_iva10": 100.00,
+  "Total_iva": 150.00,
+  "Total_letras": "mil pesos",
+  "Sucursal": "Sucursal 2"
+}
+
+
+###
+### Actualizar una factura existente ###
+PUT {{WebAPI_HostAddress}}/factura/1
+Content-Type: application/json
+
+{
+  "Id": 1,
+  "IdCliente": 1,
+  "Nro_factura": "123-456-789012",
+  "FechaHora": "2023-06-19T00:00:00",
+  "Total": 2000.00,
+  "Total_iva5": 100.00,
+  "Total_iva10": 200.00,
+  "Total_iva": 300.00,
+  "Total_letras": "dos mil",
+  "Sucursal": "Sucursal 1"
+}
+
+###
+### Eliminar una factura por ID ###
+DELETE {{WebAPI_HostAddress}}/factura/1
